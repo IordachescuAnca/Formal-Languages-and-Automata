@@ -7,7 +7,7 @@ class Dfa:
 		self.__final_states = final_states
 		self.__transitions = transitions
 
-	def reading_data(self):
+	def read_data(self):
 		number_states = int(input("Enter the number of states. "))
 		for _ in range(0,number_states):
 			state = input()
@@ -57,7 +57,7 @@ class Dfa:
 
 
 Automata = Dfa()
-Automata.reading_data()
+Automata.read_data()
 
 while True:
 	choice = int(input("Enter 1 for checking a word or 0 for quitting: "))
